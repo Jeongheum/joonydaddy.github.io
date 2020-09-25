@@ -16,12 +16,11 @@ p.85 import codec # 필수일까?
 
 
 ## 3.2 정규식표현으로 문자열 다루기
-파이썬 howto문서 docs.python.org/3.7/howto/regex.html
-점프투파이썬 7장 참고 https://wikidocs.net/4308
+파이썬 howto문서 docs.python.org/3.7/howto/regex.html  
+점프투파이썬 7장 참고 https://wikidocs.net/4308  
 
 python, c, c++, java, 아래아 한글 등 여러 프로그램에서 공통적으로 사용할 수 있음.  
 
-|----------|------|  
 |  method | 목적 |  
 |---------|------|  
 | re.match(pattern, str) | # 문자열의 처음부터 정규식과 매치되는지 조사한다.  |  

@@ -23,8 +23,12 @@ python, c, c++, java, 아래아 한글 등 여러 프로그램에서 공통적�
 
 |  method | 목적 |  
 |---------|------|  
-| re.match(pattern, str) | # 문자열의 처음부터 정규식과 매치되는지 조사한 후, match객체를 돌려준다. group method해야 실제 검색결과 확인가능 |  
-| re.search(pattern, str) | # 문자열 전체를 검색하여 정규식과 매치되는지 조사한 후, match객체를 돌려준다. group method해야 실제 검색결과 확인가능 |
+| obj=re.compile(정규식) | # 정규식을 pattern 객체로 만들어줌. 객체를 여러번 재사용하는 경우에 이 방법이 유리하다.  
+아니라면 re.findall(pattern, str)처럼 compile과 method를 한번에 수행한다. |  
+| re.match(pattern, str) | # 문자열의 처음부터 정규식과 매치되는지 조사한 후, match객체를 돌려준다.  
+group method해야 실제 검색결과 확인가능 |  
+| re.search(pattern, str) | # 문자열 전체를 검색하여 정규식과 매치되는지 조사한 후, match객체를 돌려준다.  
+group method해야 실제 검색결과 확인가능 |
 | re.findall(pattern, str)  | # 정규식과 매치되는 모든 문자열(substring)을 리스트로 돌려준다 |  
 | re.split(patter, str)  |  |
 | re.sub(pattern, repl, str) | # 이 순서는 함수 intelligence기능 도움을 받자  |  

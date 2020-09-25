@@ -23,9 +23,16 @@ python, c, c++, java, 아래아 한글 등 여러 프로그램에서 공통적�
 
 |  method | 목적 |  
 |---------|------|  
-| re.match(pattern, str) | # 문자열의 처음부터 정규식과 매치되는지 조사한 후, match객체를 돌려준다. group method를 추가해야 실제 검색결과 확인가능하다. |  
-| re.search(pattern, str) | # 문자열 전체를 검색하여 정규식과 매치되는지 조사한 후, match객체를 돌려준다. group method를 추가해야 실제 검색결과 확인가능하다. |
+| re.match(pattern, str) | # 문자열의 처음부터 정규식과 매치되는지 조사한 후, match객체를 돌려준다. group method해야 실제 검색결과 확인가능 |  
+| re.search(pattern, str) | # 문자열 전체를 검색하여 정규식과 매치되는지 조사한 후, match객체를 돌려준다. group method해야 실제 검색결과 확인가능 |
 | re.findall(pattern, str)  | # 정규식과 매치되는 모든 문자열(substring)을 리스트로 돌려준다 |  
 | re.split(patter, str)  |  |
 | re.sub(pattern, repl, str) | # 이 순서는 함수 intelligence기능 도움을 받자  |  
 
+
+match객체의 method  
+| method	| 목적 |  
+| group()	| 매치된 문자열을 돌려준다. |  
+| start()	| 매치된 문자열의 시작 위치를 돌려준다. |  
+| end()	| 매치된 문자열의 끝 위치를 돌려준다.  |  
+| span()	| 매치된 문자열의 (시작, 끝)에 해당하는 튜플을 돌려준다. |  

@@ -16,7 +16,9 @@ p.85 import codec # 필수일까?
 
 
 ## 3.2 정규식표현으로 문자열 다루기
-pytho, c, c++, java, 아래아 한글 등 여러 프로그램에서 공통적으로 사용할 수 있음.  
+docs.python.org/3.7/howto/regex.html
+
+python, c, c++, java, 아래아 한글 등 여러 프로그램에서 공통적으로 사용할 수 있음.  
 
 re.match(pattern, str) # 해당 문자열의 가장 처음부터  
 re.search(pattern, str)  

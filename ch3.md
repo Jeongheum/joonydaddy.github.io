@@ -25,6 +25,7 @@ python, c, c++, java, 아래아 한글 등 여러 프로그램에서 공통적�
 |---------|------|  
 | re.match(pattern, str) | # 문자열의 처음부터 정규식과 매치되는지 조사한다.  |  
 | re.search(pattern, str) | # 문자열 전체를 검색하여 정규식과 매치되는지 조사한다 |
-re.findall(pattern, str)  
-re.split(patter, str)  
-re.sub(pattern, repl, str) # 이 순서는 함수 intelligence기능 도움을 받자  
+| re.findall(pattern, str)  |  |  
+| re.split(patter, str)  |  |
+| re.sub(pattern, repl, str) | # 이 순서는 함수 intelligence기능 도움을 받자  |  
+

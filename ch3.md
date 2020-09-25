@@ -19,4 +19,6 @@ pytho, c, c++, java, 아래아 한글 등 여러 프로그램에서 공통적으
 
 re.match(pattern, str) # 해당 문자열의 가장 처음부터  
 re.search(pattern, str)  
-re.findall(pattern, str)
+re.findall(pattern, str)  
+re.split(patter, str)  
+re.sub(pattern, repl, str) # 이 순서는 함수 intelligence기능 도움을 받자  

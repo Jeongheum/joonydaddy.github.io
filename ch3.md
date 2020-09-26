@@ -13,6 +13,9 @@ p.78, 80, 83 f.write()하면 입력한 개수출력은 idle에서 실행할때�
 p.83 with 문으로 객체를 만들지 않고 파일 입출력하기 --> as f에서 f가 객체에 해당하므로, with문으로 파일 입출력하기가 더 적합할 듯하다.  
 
 p.85 import codec # 필수일까?  
+open('filename','r', encoding='utf8')로 해도 한글txt화일이 정상적으로 열리는데,  
+import codec  # pip install codec
+f=codec.open('filename','r','utf8')
 
 
 ## 3.2 정규식표현으로 문자열 다루기
@@ -20,6 +23,17 @@ p.85 import codec # 필수일까?
 점프투파이썬 7장 참고 https://wikidocs.net/4308  
 
 python, c, c++, java, 아래아 한글 등 여러 프로그램에서 공통적으로 사용할 수 있음.  
+메타문자
+^,.\*[],
+
+|정규표현식 | 설명|  
+|----------|-----|
+|\d | 숫자와 매치, [0-9]와 동일 |  
+|\D | 숫자가 아닌것과 매치, ^[0-9]와 동일 |  
+|\w | 문자 숫자와 매치. [a-zA-z0-9]와 동일 |  
+|\W | \w와 반대  |  
+|\s | whitespace문자와 매치. |  
+|\S |   |
 
 |  method | 목적 |  
 |---------|------|  

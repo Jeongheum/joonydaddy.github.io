@@ -17,14 +17,23 @@ https://git-scm.com/download/gui/windows에 window용 client 프로그램이 수
 
 # 1장. 
 ## git 설치 git-scm.com
-기본편집기는 vim으로 설정
+<설치시 설정>
+기본편집기는 vim으로 설정. 예전에 설치한거라 설치했나 긴가민가 했는데, git bash에서는 기본적으로 vim이 실행됨.
 사용방법은 get from the command line and also from 3rd party software선택
 
-
-리눅스에서 시초된 툴이라, cli에서의 기본 명령어를 익혀야 한다.
+리눅스에서 시초된 툴이라, git bash, git cmd등 cli가 제공된다. 따라서 기본 명령어를 익혀야 한다.
 pwd (present working directory)
 cd (change directory)
 mkdir (make directory)
 rm -r (remove)
 ls (list)
 ls -al (list all, long) 숨김화일, 디렉터리 포함해서, 상세 정보를 보여줌.
+dir도 사용가능함. DOS시절 명령어
+
+## git 명령어
+
+| git  | 사용법을 보여줌 |
+|------|----------------|
+| git config --global user.name "your_name" | 최초설정시 1번. 협업환경에서 사용자 이름 확인용 |
+| git config --global user.email "your_email_addr@your_email.com" | 최초설정시 1번 실행. 협업환경에서 사용자 메일 확인용 |
+

@@ -54,8 +54,11 @@ dir도 사용가능함. DOS시절 명령어
 | git commit -m "note message" | 간단한 메시지 노트와 함께 커밋 |  
 | git commit -am | 한번이라도 commit한적 있는 파일에 대해서 한꺼번에 처리 |  
 | git log | 작성자, 수정날짜, 메시지, 커밋 해시(커밋구분id) 등 표시  |  
+| git log --stat | |  
 | git diff | 수정내용을 비교 확인 |  
 | git checkout | 수정내용을 버릴때 사용 |  
+| git reset HEAD | |  
+| git reset HEAD^ | |  
 | git remote add |  |  
 
 # 2장 git 버전관리  
@@ -68,3 +71,5 @@ dir도 사용가능함. DOS시절 명령어
 4. version생성 : git commit. 버전으로 반영. 여기까지 로컬 저장소  
 5. push or pull : git remote add??? 원격저장소. 이거하기전에 remote설정해야겠지?   
 
+.gitinore에 git을 무시할 화일, 확장자 등 지정가능
+.png, .jpg, .pdf등 추가해두자

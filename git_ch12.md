@@ -18,12 +18,18 @@ https://git-scm.com/download/gui/windows에 window용 client 프로그램이 수
 # 1장. 
 ## git 설치 git-scm.com
 <설치시 설정>
-기본편집기는 vim으로 설정. 예전에 설치한거라 설치했나 긴가민가 했는데, git bash에서는 기본적으로 vim이 실행됨.
+기본편집기는 vim으로 설정. 
+  - 예전에 설치한거라 설치했나 긴가민가 했는데, git bash에서는 기본적으로 vim이 실행됨.
+  - 대학 1학년때 배웠던 vi editor사용법과 같다. a, i로 편집모드. esc로 ex모드. :wq, :q 저장하고 종료하거나, 그냥 종료하거나.
 사용방법은 get from the command line and also from 3rd party software선택
 
+## 리눅스 기본 명령어
 리눅스에서 시초된 툴이라, git bash, git cmd등 cli가 제공된다. 따라서 기본 명령어를 익혀야 한다.
+
 pwd (present working directory)
 cd (change directory)
+cd ~ (change to home/user directory)
+cd ..
 mkdir (make directory)
 rm -r (remove)
 ls (list)
@@ -34,6 +40,13 @@ dir도 사용가능함. DOS시절 명령어
 
 | git  | 사용법을 보여줌 |
 |------|----------------|
-| git config --global user.name "your_name" | 최초설정시 1번. 협업환경에서 사용자 이름 확인용 |
-| git config --global user.email "your_email_addr@your_email.com" | 최초설정시 1번 실행. 협업환경에서 사용자 메일 확인용 |
+| git config --global user.name "your_name" | 최초 1회 설정. 협업환경에서 사용자 이름 확인용. |
+| git config --global user.email "your_email_addr@your_email.com" | 최초 1회 설정. 협업환경에서 사용자 메일 확인용. 이거 바꾸려면, cd ~가서, vim .gitconfig하고 user.email의 값을 바꾸고 :wq!하면 된다. git config --help로 한참 찾았음.|
+| git config --global core.editor "notepad++" | |
+| git config --list | 설정값을 리스트해줌 |
 
+# 2장 git 버전관리
+큰 흐름
+[local com]                                      [Remote] 
+new file or modify file > stage > version   >   push or pull
+                      git add   git commit -m "message"

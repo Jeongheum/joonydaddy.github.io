@@ -71,5 +71,4 @@ dir도 사용가능함. DOS시절 명령어
 4. version생성 : git commit. 버전으로 반영. 여기까지 로컬 저장소  
 5. push or pull : git remote add??? 원격저장소. 이거하기전에 remote설정해야겠지?   
 
-.gitinore에 git을 무시할 화일, 확장자 등 지정가능
-.png, .jpg, .pdf등 추가해두자
+.gitinore에 git을 무시할 디렉토리, 화일, 확장자 등 지정가능. temp/, .png, .jpg, .pdf등 추가해두자

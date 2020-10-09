@@ -36,17 +36,35 @@ ls (list)
 ls -al (list all, long) 숨김화일, 디렉터리 포함해서, 상세 정보를 보여줌.  
 dir도 사용가능함. DOS시절 명령어  
 
-## git 명령어  
+## git 최초 설정 명령어  
 
 | git  | 사용법을 보여줌 |  
 |------|----------------|  
 | git config --global user.name "your_name" | 최초 1회 설정. 협업환경에서 사용자 이름 확인용. |  
 | git config --global user.email "your_email_addr@your_email.com" | 최초 1회 설정. 협업환경에서 사용자 메일 확인용. 이거 바꾸려면, cd ~가서, vim .gitconfig하고 user.email의 값을 바꾸고 :wq!하면 된다. git config --help로 한참 찾았음.|
-| git config --global core.editor "notepad++" | |
-| git config --list | 설정값을 리스트해줌 |
+| git config --global core.editor "notepad++" | |  
+| git config --list | 설정값을 리스트해줌 |  
+
+## 자주 사용하는 git명령어
+| git  | 사용법을 보여줌 |  
+|------|----------------|  
+| git status | on branch master, x commits, changes to be committed |  
+| git init | .git/ 폴더 생성.  |  
+| git add | 스테이지에 올리기 |  
+| git commit -m "note message" | 간단한 메시지 노트와 함께 커밋 |  
+| git commit -am | 한번이라도 commit한적 있는 파일에 대해서 한꺼번에 처리 |  
+| git log | 작성자, 수정날짜, 메시지, 커밋 해시(커밋구분id) 등 표시  |  
+| git diff | 수정내용을 비교 확인 |  
+| git checkout | 수정내용을 버릴때 사용 |  
+| git remote add |  |  
 
 # 2장 git 버전관리  
 큰 흐름  
-[local com]                                      [Remote]  
-new file or modify file > stage > version   >   push or pull  
-                      git add   git commit -m "message"  
+1. git init : .git/을 만들어서 관리시작함. 먼저 git으로 관리할 (프로젝트) 폴더를 만들고, 이동해서 git init실행.   
+              일반 폴더에서 명령하면 not a git repository라고 뜸  
+2. new file or modify file : editor. working tree/directory  
+--- 3, 4는 .git/ 에서 이뤄진다.
+3. stage : git add. 버전으로 관리하고 싶은 화일을 stage에 등록. staging (untracked -> tracked).   
+4. version생성 : git commit. 버전으로 반영. 여기까지 로컬 저장소  
+5. push or pull : git remote add??? 원격저장소. 이거하기전에 remote설정해야겠지?   
+

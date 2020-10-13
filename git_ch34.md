@@ -1,3 +1,4 @@
+# 3장 브랜치  
 ## 브랜치 확인 / 만들기  
 git branch # branch확인하거나,   
 git branch apple # 브랜치 만들기. b라는 브랜치 생성  
@@ -44,4 +45,12 @@ git stash pop # 가장 최근 stash 목록으로 되돌리기
 git stash apply # stash목록에 기록도 두고, 가장 최근 목록을 불러온다
 git stash drop # 가장 최근 목록을 삭제한다.
 
-# 4장 깃허브로 백업하기
+# 4장 깃허브로 백업하기  
+## 원격 저장소에 연결하기  
+git remote add origin url  # 최초 1회 실행 remote repo (origin, url)을 연결해라  
+git remote -v   # remote repo 연결확인  
+
+git push -u origin master  # local repo (master)를 remote repo (origin)으로 push해라. 최초 1회 실행.  
+git push # 이후에는 이렇게  
+
+git pull = git pull origin master

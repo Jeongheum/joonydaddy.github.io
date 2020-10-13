@@ -3,10 +3,9 @@
 git branch # branch확인하거나,   
 git branch apple # 브랜치 만들기. b라는 브랜치 생성  
 
-git log  
-# (HEAD -> master, apple) # 2개의 브랜치가 있고, 현재 작업중인 브랜치는 master브랜치다  
+git log  # (HEAD -> master, apple) # 2개의 브랜치가 있고, 현재 작업중인 브랜치는 master브랜치다  
 
-git commit -am "message" # branch명에만 commit  
+git commit -am "message" # commit  
 
 ## 브랜치 이동  
 git checkout apple # apple branch로 체크아웃  
